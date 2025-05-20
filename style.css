@@ -506,8 +506,9 @@ nav .fas {
     .header-text-bg {
 
         z-index: 1;
-        margin-top: -30%;
-        width: 70%;
+        margin-top: -50%;
+        width: 75%;
+        padding: 2px;
 
 
     }
