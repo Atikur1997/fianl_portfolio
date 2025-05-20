@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url("imgs/1stImages.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5rem;
+
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: transparent;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1.5s;
+
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    color: transparent;
+    font-size: 2rem;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: #ef4a4a59;
+    font-family: "Tagesschrift";
+}
+
+.header-text {
+    margin-top: 05%;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.header-text h1 {
+    color: aqua;
+    font-family: "Merriweather";
+    font-size: 50px;
+}
+
+
+.header-text-bg {
+    background: #ff004f;
+    width: 45%;
+    margin: 60px 0;
+    padding: 10px 0;
+    opacity: .5;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    top: 280px;
+}
+
+.htp {
+    font-size: 18px;
+    margin: 20px;
+    color: rgb(190, 190, 185);
+    line-height: 1.5;
+    opacity: 1;
+    text-align: justify;
+    font-family: "Playwrite DK Loopet";
+
+}
+
+/* about me css starts here */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+#about img {
+    margin: 0px 20px;
+    height: 400px;
+    width: 400px;
+
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    margin: 20px 20px;
+    font-size: 60px;
+    font-family: "Playwrite DK Loopet";
+
+}
+
+.about-col-2 .para {
+    margin-top: 50px;
+    text-align: justify;
+    width: 80%;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 60px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.tab-links::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links:hover::after {
+    width: 100%;
+
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* about me css ends here */
+
+/* service section starts here */
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 50px 40px;
+
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: justify;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 100px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.12;
+    font-size: 16px;
+}
+
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+/* service section ends here */
+
+
+/* portfolio section starts here */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 50px 90px;
+}
+
+
+.work img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.work {
+    position: relative;
+    overflow: hidden;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.layer h3 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    color: #fff;
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background-color: #ff004f;
+    color: #fff;
+}
+
+/* portfolio section Ends here */
+
+
+/* Contact section Starts here */
+.row {
+    margin: 20px 30px;
+}
+
+.contact-left {
+    margin-top: 30px;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    margin: 0 20px;
+    color: #ff004f;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    transition: 0.5s;
+
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    cursor: pointer;
+
+}
+
+.contact-right form {
+    width: 100%;
+    position: relative;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 10px;
+    background: #1b1b1b;
+    color: #cacaca;
+}
+
+/* Contact section Ends here */
+
+/* ------------CSS for small Screen-------------------- */
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #header {
+        background: url('imgs/1stImages.jpg');
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .header-text {
+        margin-top: 120%;
+        font-size: 16px;
+
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #272224;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.2;
+        transition: 0.5s;
+
+
+    }
+
+
+    nav ul .fas {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+
+    }
+
+    .header-text-bg {
+
+        z-index: 1;
+
+
+    }
+
+}

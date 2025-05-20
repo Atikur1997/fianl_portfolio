@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Of Atikur Rahman</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Tagesschrift&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon"
+        href="imgs/computer-icons-career-portfolio-icon-design-png-favpng-mfnqHB20A14CuA1e4rJYunVe5.jpg"
+        type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a04ea4a397.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Atikur Rahman..</a>
+            </div>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+        </div>
+        <div class="header-text">
+            <h1>Front-End Web Developer</h1>
+            <div class="header-text-bg">
+                <p class="htp">I am a frontend web developer with a passion for creating simple, responsive, and
+                    user-friendly websites.
+                    I have basic knowledge of HTML, CSS, and JavaScript, and I am continuously learning new skills to
+                    improve my work. I enjoy turning ideas into visually appealing designs and aim to build interactive
+                    websites that offer a smooth user experience.</p>
+
+            </div>
+        </div>
+    </div>
+    <!--------------------   About Me Section  Starts Here      ------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imgs/aboutMe.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">I am a dedicated beginner front-end developer eager to explore the world of web
+                        development. With
+                        a strong foundation in HTML, CSS, and JavaScript, I am learning how to build responsive,
+                        accessible, and visually engaging websites. I enjoy solving problems, designing user-friendly
+                        interfaces, and continuously improving my skills through hands-on projects and real-world
+                        challenges. My goal is to create seamless web experiences that combine functionality with
+                        creativity.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="openTab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('Education')">Education
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App intrfaces</li>
+                            <li><span>HTML</span><br>Structuring web pages</li>
+                            <li><span>CSS</span><br>Styling web pages</li>
+                            <li><span>Bootstrap</span><br>Responsive design framework</li>
+                            <li><span>JavaScript</span><br>Adding interactivity to web pages</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Sonar Bangla Navigation</span><br>Position: Office Engineer <br>Duration: 2022 -
+                                2023</li>
+                            <li><span>Quantanite</span><br>Position: Associate <br>Duration: 2024 - Present </li>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Seconday School Cirtificate</span><br>Division: Science <br>Passing Year:2012
+                                <br>Institute: Dinajpur Zilla School <br>Grade: 4.88
+                            </li>
+                            <li><span>Higher Secondary Certificate</span><br>Division: Science <br>Passing Year:2014
+                                <br>Institute: Biam Model School And College,Bogura <br>Grade: 5.00
+                            </li>
+                            <li><span>Bachelor in Science</span><br>Division: Civil Engineering <br>Passing Year:2021
+                                <br>Institute: International University of Business Agriculture and Technology
+                                <br>Grade: 3.59
+                            </li>
+                            <li><span>Master's in Science</span><br>Division: Information and Technology <br>Passing
+                                Year:Still Running
+                                <br>Institute: Jahangirnagar University <br>Grade: 3.50
+                            </li>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------   About Me Section  Ends Here      ------------------------------------->
+
+
+    <!--------------------  Service  Section  Starts Here      ------------------------------------->
+    <div id="services">
+        <h1 class="sub-title">My Services</h1>
+        <div class="container">
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design for beginners is all about learning how to create visually appealing and user-friendly
+                        websites using basic tools like HTML, CSS, and a bit of JavaScript. It focuses on layout, color,
+                        fonts, and navigation to make sure users have a smooth experience. As a beginner, you’ll start
+                        by
+                        building simple pages and gradually explore responsive design, accessibility, and good design
+                        principles. With practice, you'll turn ideas into real, working websites.</p>
+                    <a href="#">Learn More....</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design is about making websites and apps look good and easy to use. "UI" means User
+                        Interface —
+                        how things look, like buttons, colors, and text. "UX" means User Experience — how it feels to
+                        use
+                        the app or website, like how easy it is to find something or complete a task. If you're just
+                        starting, focus on learning how to keep things simple, clean, and helpful for users. Good UI/UX
+                        design makes people enjoy using a website without getting confused or frustrated.</p>
+                    <a href="#">Learn More...</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design for beginners is about learning how to create simple, user-friendly mobile apps that
+                        people enjoy using. It combines both how the app looks (design) and how it works (function). As
+                        a beginner, you’ll focus on planning screens, choosing colors and fonts, and making sure users
+                        can easily navigate through the app. Good app design is clean, clear, and helps users do what
+                        they need without confusion. Starting small with basic tools and practicing often is the best
+                        way to improve your skills.</p>
+                    <a href="#">Learn More...</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------------  Service  Section  Ends Here      --------------------------------------->
+
+    <!--------------------  Portfolio  Section  Starts Here      --------------------------------------->
+    <div id="portfolio">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="imgs/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you with the world, sharing updates and staying in touch with friends.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imgs/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you with the world, sharing updates and staying in touch with friends.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imgs/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you with the world, sharing updates and staying in touch with friends.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    <!--------------------  Portfolio  Section  Ends Here      --------------------------------------->
+
+
+    <!--------------------  Contract  Section  starts Here      --------------------------------------->
+    <div id="contact">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i> nishanrahman@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +8801797768858</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/atikurrahman.nissan/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="www.linkedin.com/in/a-k-m-atikur-rahman-164889135"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="imgs/cv_atikur.pdf" download="cv_atikur.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" row="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Atikur Rahman. Made with <i class="fa-solid fa-heart"></i> by Atikur Rahman</p>
+        </div>
+    </div>
+
+
+    <!--------------------  Contract  Section  ends Here      --------------------------------------->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
