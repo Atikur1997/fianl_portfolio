@@ -451,7 +451,7 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 
     #header {
         background: url('imgs/1stImages.jpg');
@@ -461,7 +461,7 @@ nav .fas {
     }
 
     .header-text {
-        margin-top: 120%;
+        margin-top: 140%;
         font-size: 16px;
 
     }
